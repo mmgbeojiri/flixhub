@@ -40,13 +40,15 @@ input {
 }
 
 .entry {
-  @apply flex border rounded-xl shadow border-slate-50   
+  @apply flex border relative rounded-xl inline justify-center items-center shadow border-slate-50 hover:-translate-y-1   
 }
 
 .entry img {
-  @apply min-w-full object-cover rounded-t-xl
+  @apply w-full h-full object-fill rounded-xl;
 }
 
 .entry p {
-  @apply font-bold m-5 text-slate-600
+  background: rgba(0, 0, 0, 0);
+background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  @apply text-center font-bold text-sm text-slate-50 absolute bottom-0 rounded-xl w-full p-5
 }

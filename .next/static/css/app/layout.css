@@ -79,9 +79,10 @@
     --color-slate-50: oklch(98.4% 0.003 247.858);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-500: oklch(55.4% 0.046 257.417);
-    --color-slate-600: oklch(44.6% 0.043 257.281);
     --color-slate-950: oklch(12.9% 0.042 264.695);
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
@@ -518,25 +519,44 @@ input {
   }
 }
 .entry {
+  position: relative;
   display: flex;
+  display: inline;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--radius-xl);
   border-style: var(--tw-border-style);
   border-width: 1px;
   border-color: var(--color-slate-50);
   --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  &:hover {
+    @media (hover: hover) {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
 }
 .entry img {
-  min-width: 100%;
-  border-top-left-radius: var(--radius-xl);
-  border-top-right-radius: var(--radius-xl);
-  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--radius-xl);
+  object-fit: fill;
 }
 .entry p {
-  margin: calc(var(--spacing) * 5);
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  bottom: calc(var(--spacing) * 0);
+  width: 100%;
+  border-radius: var(--radius-xl);
+  padding: calc(var(--spacing) * 5);
+  text-align: center;
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
-  color: var(--color-slate-600);
+  color: var(--color-slate-50);
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -681,6 +701,21 @@ input {
   syntax: "*";
   inherits: false;
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -717,6 +752,9 @@ input {
       --tw-ease: initial;
       --tw-duration: initial;
       --tw-font-weight: initial;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
     }
   }
 }

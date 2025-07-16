@@ -10,7 +10,7 @@ export default function Navbar() {
       <h1 className="!py-1 !px-2">Flixhub</h1>
       <a href="/" className="!py-1 !px-2">Home</a>
       <div className="flex-row flex w-screen ">
-      <input type="text" className="flex-9 !border-r-0 !rounded-r-none" placeholder="Search" />
+      <input type="text" onChange={(e) => setInputText(e.target.value)} className="flex-9 !border-r-0 !rounded-r-none" placeholder="Search" />
 <input type="submit" onClick={
         (e) => {
           e.preventDefault();
