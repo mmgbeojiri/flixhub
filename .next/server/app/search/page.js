@@ -127,7 +127,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Search)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../navbar */ \"(ssr)/./app/navbar.tsx\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\nfunction Search() {\n    let [entries, setEntries] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([\n        {\n            text: \"Entry 1\",\n            link: \"https://www.google.com\",\n            image: \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/250px-Image_created_with_a_mobile_phone.png\"\n        },\n        {\n            text: \"Entry 2\",\n            link: \"https://www.google.com\",\n            image: \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/250px-Image_created_with_a_mobile_phone.png\"\n        },\n        {\n            text: \"Entry 3\",\n            link: \"https://www.google.com\",\n            image: \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/250px-Image_created_with_a_mobile_phone.png\"\n        },\n        {\n            text: \"Entry 4\",\n            link: \"https://www.google.com\",\n            image: \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/250px-Image_created_with_a_mobile_phone.png\"\n        }\n    ]);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_navbar__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n                fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                lineNumber: 36,\n                columnNumber: 5\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"grid grid-cols-3 m-5 gap-4\",\n                children: entries.map((entry, index)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: \"entry\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                            href: entry.link,\n                            target: \"_blank\",\n                            rel: \"noopener noreferrer\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                                    src: entry.image,\n                                    alt: entry.text\n                                }, void 0, false, {\n                                    fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                                    lineNumber: 41,\n                                    columnNumber: 17\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                    children: entry.text\n                                }, void 0, false, {\n                                    fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                                    lineNumber: 42,\n                                    columnNumber: 17\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                            lineNumber: 40,\n                            columnNumber: 13\n                        }, this)\n                    }, index, false, {\n                        fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                        lineNumber: 39,\n                        columnNumber: 9\n                    }, this))\n            }, void 0, false, {\n                fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                lineNumber: 37,\n                columnNumber: 5\n            }, this)\n        ]\n    }, void 0, true);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9hcHAvc2VhcmNoL3BhZ2UudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFDaUM7QUFDRjtBQVFoQixTQUFTRTtJQUNwQixJQUFJLENBQUNDLFNBQVNDLFdBQVcsR0FBR0osK0NBQVFBLENBQVU7UUFDMUM7WUFDSUssTUFBTTtZQUNOQyxNQUFNO1lBQ05DLE9BQU87UUFDWDtRQUNBO1lBQ0lGLE1BQU07WUFDTkMsTUFBTTtZQUNOQyxPQUFPO1FBQ1g7UUFDQTtZQUNJRixNQUFNO1lBQ05DLE1BQU07WUFDTkMsT0FBTztRQUNYO1FBQ0E7WUFDSUYsTUFBTTtZQUNOQyxNQUFNO1lBQ05DLE9BQU87UUFDWDtLQUNIO0lBQ0gscUJBQ0U7OzBCQUNBLDhEQUFDTiwrQ0FBTUE7Ozs7OzBCQUNQLDhEQUFDTztnQkFBSUMsV0FBVTswQkFDZE4sUUFBUU8sR0FBRyxDQUFDLENBQUNDLE9BQU9DLHNCQUNqQiw4REFBQ0o7d0JBQWdCQyxXQUFVO2tDQUN2Qiw0RUFBQ0k7NEJBQUVDLE1BQU1ILE1BQU1MLElBQUk7NEJBQUVTLFFBQU87NEJBQVNDLEtBQUk7OzhDQUNyQyw4REFBQ0M7b0NBQUlDLEtBQUtQLE1BQU1KLEtBQUs7b0NBQUVZLEtBQUtSLE1BQU1OLElBQUk7Ozs7Ozs4Q0FDdEMsOERBQUNlOzhDQUFHVCxNQUFNTixJQUFJOzs7Ozs7Ozs7Ozs7dUJBSFpPOzs7Ozs7Ozs7Ozs7QUFZbEIiLCJzb3VyY2VzIjpbIi93b3Jrc3BhY2VzL2ZsaXhodWIvYXBwL3NlYXJjaC9wYWdlLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBjbGllbnRcIlxuaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBOYXZiYXIgZnJvbSBcIi4uL25hdmJhclwiO1xuaW50ZXJmYWNlIEVudHJ5IHtcbiAgICB0ZXh0OiBzdHJpbmc7XG4gICAgbGluazogc3RyaW5nO1xuICAgIGltYWdlOiBzdHJpbmc7XG59XG5cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU2VhcmNoKCkge1xuICAgIGxldCBbZW50cmllcywgc2V0RW50cmllc10gPSB1c2VTdGF0ZTxFbnRyeVtdPihbXG4gICAgICAgIHtcbiAgICAgICAgICAgIHRleHQ6IFwiRW50cnkgMVwiLFxuICAgICAgICAgICAgbGluazogXCJodHRwczovL3d3dy5nb29nbGUuY29tXCIsXG4gICAgICAgICAgICBpbWFnZTogXCJodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iL2IvYjYvSW1hZ2VfY3JlYXRlZF93aXRoX2FfbW9iaWxlX3Bob25lLnBuZy8yNTBweC1JbWFnZV9jcmVhdGVkX3dpdGhfYV9tb2JpbGVfcGhvbmUucG5nXCJcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgICAgdGV4dDogXCJFbnRyeSAyXCIsXG4gICAgICAgICAgICBsaW5rOiBcImh0dHBzOi8vd3d3Lmdvb2dsZS5jb21cIixcbiAgICAgICAgICAgIGltYWdlOiBcImh0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvYi9iNi9JbWFnZV9jcmVhdGVkX3dpdGhfYV9tb2JpbGVfcGhvbmUucG5nLzI1MHB4LUltYWdlX2NyZWF0ZWRfd2l0aF9hX21vYmlsZV9waG9uZS5wbmdcIlxuICAgICAgICB9LFxuICAgICAgICB7XG4gICAgICAgICAgICB0ZXh0OiBcIkVudHJ5IDNcIixcbiAgICAgICAgICAgIGxpbms6IFwiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbVwiLFxuICAgICAgICAgICAgaW1hZ2U6IFwiaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi9iL2I2L0ltYWdlX2NyZWF0ZWRfd2l0aF9hX21vYmlsZV9waG9uZS5wbmcvMjUwcHgtSW1hZ2VfY3JlYXRlZF93aXRoX2FfbW9iaWxlX3Bob25lLnBuZ1wiXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICAgIHRleHQ6IFwiRW50cnkgNFwiLFxuICAgICAgICAgICAgbGluazogXCJodHRwczovL3d3dy5nb29nbGUuY29tXCIsXG4gICAgICAgICAgICBpbWFnZTogXCJodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iL2IvYjYvSW1hZ2VfY3JlYXRlZF93aXRoX2FfbW9iaWxlX3Bob25lLnBuZy8yNTBweC1JbWFnZV9jcmVhdGVkX3dpdGhfYV9tb2JpbGVfcGhvbmUucG5nXCJcbiAgICAgICAgfVxuICAgIF0pO1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgPE5hdmJhciAvPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtMyBtLTUgZ2FwLTRcIj5cbiAgICB7ZW50cmllcy5tYXAoKGVudHJ5LCBpbmRleCkgPT4gKFxuICAgICAgICA8ZGl2IGtleT17aW5kZXh9IGNsYXNzTmFtZT1cImVudHJ5XCI+XG4gICAgICAgICAgICA8YSBocmVmPXtlbnRyeS5saW5rfSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub29wZW5lciBub3JlZmVycmVyXCI+XG4gICAgICAgICAgICAgICAgPGltZyBzcmM9e2VudHJ5LmltYWdlfSBhbHQ9e2VudHJ5LnRleHR9IC8+XG4gICAgICAgICAgICAgICAgPHA+e2VudHJ5LnRleHR9PC9wPlxuICAgICAgICAgICAgPC9hPlxuICAgICAgICA8L2Rpdj5cbiAgICApKX1cbiAgICA8L2Rpdj5cbiAgICA8Lz5cbiAgICBcblxuICApO1xufVxuIl0sIm5hbWVzIjpbInVzZVN0YXRlIiwiTmF2YmFyIiwiU2VhcmNoIiwiZW50cmllcyIsInNldEVudHJpZXMiLCJ0ZXh0IiwibGluayIsImltYWdlIiwiZGl2IiwiY2xhc3NOYW1lIiwibWFwIiwiZW50cnkiLCJpbmRleCIsImEiLCJocmVmIiwidGFyZ2V0IiwicmVsIiwiaW1nIiwic3JjIiwiYWx0IiwicCJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./app/search/page.tsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Search)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../navbar */ \"(ssr)/./app/navbar.tsx\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nconst API_URL = '/api/search';\nfunction Search() {\n    let [entries, setEntries] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)({\n        \"Search.useEffect\": ()=>{\n            console.log(\"Fetching data from Clientside\");\n            axios__WEBPACK_IMPORTED_MODULE_3__[\"default\"].get(API_URL).then({\n                \"Search.useEffect\": (response)=>{\n                    setEntries(response.data);\n                }\n            }[\"Search.useEffect\"]).catch({\n                \"Search.useEffect\": (error)=>{\n                    console.error('Error fetching data from Clientside:', error);\n                }\n            }[\"Search.useEffect\"]).finally({\n                \"Search.useEffect\": ()=>{\n                    console.log(\"Finished fetching data\");\n                }\n            }[\"Search.useEffect\"]);\n        }\n    }[\"Search.useEffect\"], []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_navbar__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n                fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                lineNumber: 52,\n                columnNumber: 5\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"grid grid-cols-3 m-5 gap-4\",\n                children: entries.map((entry, index)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: \"entry\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                            href: entry.link,\n                            target: \"_blank\",\n                            rel: \"noopener noreferrer\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                                    src: entry.image,\n                                    alt: entry.text\n                                }, void 0, false, {\n                                    fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                                    lineNumber: 57,\n                                    columnNumber: 17\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                    children: entry.text\n                                }, void 0, false, {\n                                    fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                                    lineNumber: 58,\n                                    columnNumber: 17\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                            lineNumber: 56,\n                            columnNumber: 13\n                        }, this)\n                    }, index, false, {\n                        fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                        lineNumber: 55,\n                        columnNumber: 9\n                    }, this))\n            }, void 0, false, {\n                fileName: \"/workspaces/flixhub/app/search/page.tsx\",\n                lineNumber: 53,\n                columnNumber: 5\n            }, this)\n        ]\n    }, void 0, true);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9hcHAvc2VhcmNoL3BhZ2UudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQzRDO0FBQ2I7QUFDYztBQU83QyxNQUFNSSxVQUFpQjtBQUdSLFNBQVNDO0lBQ3BCLElBQUksQ0FBQ0MsU0FBU0MsV0FBVyxHQUFHTiwrQ0FBUUEsQ0FBVSxFQXFCN0M7SUFFREQsZ0RBQVNBOzRCQUFDO1lBQ05RLFFBQVFDLEdBQUcsQ0FBQztZQUNaTiw2Q0FBS0EsQ0FBQ08sR0FBRyxDQUFDTixTQUNMTyxJQUFJO29DQUFDLENBQUNDO29CQUNITCxXQUFXSyxTQUFTQyxJQUFJO2dCQUM1QjttQ0FBR0MsS0FBSztvQ0FBQyxDQUFDQztvQkFDTlAsUUFBUU8sS0FBSyxDQUFDLHdDQUF3Q0E7Z0JBQzFEO21DQUFHQyxPQUFPO29DQUFDO29CQUNQUixRQUFRQyxHQUFHLENBQUM7Z0JBQ2hCOztRQUNSOzJCQUFHLEVBQUU7SUFFUCxxQkFDRTs7MEJBQ0EsOERBQUNQLCtDQUFNQTs7Ozs7MEJBQ1AsOERBQUNlO2dCQUFJQyxXQUFVOzBCQUNkWixRQUFRYSxHQUFHLENBQUMsQ0FBQ0MsT0FBT0Msc0JBQ2pCLDhEQUFDSjt3QkFBZ0JDLFdBQVU7a0NBQ3ZCLDRFQUFDSTs0QkFBRUMsTUFBTUgsTUFBTUksSUFBSTs0QkFBRUMsUUFBTzs0QkFBU0MsS0FBSTs7OENBQ3JDLDhEQUFDQztvQ0FBSUMsS0FBS1IsTUFBTVMsS0FBSztvQ0FBRUMsS0FBS1YsTUFBTVcsSUFBSTs7Ozs7OzhDQUN0Qyw4REFBQ0M7OENBQUdaLE1BQU1XLElBQUk7Ozs7Ozs7Ozs7Ozt1QkFIWlY7Ozs7Ozs7Ozs7OztBQVlsQiIsInNvdXJjZXMiOlsiL3dvcmtzcGFjZXMvZmxpeGh1Yi9hcHAvc2VhcmNoL3BhZ2UudHN4Il0sInNvdXJjZXNDb250ZW50IjpbIlwidXNlIGNsaWVudFwiXG5pbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgTmF2YmFyIGZyb20gXCIuLi9uYXZiYXJcIjtcbmltcG9ydCBheGlvcywgeyBBeGlvc1Jlc3BvbnNlIH0gZnJvbSBcImF4aW9zXCI7XG5pbnRlcmZhY2UgRW50cnkge1xuICAgIHRleHQ6IHN0cmluZztcbiAgICBsaW5rOiBzdHJpbmc7XG4gICAgaW1hZ2U6IHN0cmluZztcbn1cblxuY29uc3QgQVBJX1VSTDpzdHJpbmcgPSAnL2FwaS9zZWFyY2gnO1xuXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFNlYXJjaCgpIHtcbiAgICBsZXQgW2VudHJpZXMsIHNldEVudHJpZXNdID0gdXNlU3RhdGU8RW50cnlbXT4oWy8qXG4gICAgICAgIHtcbiAgICAgICAgICAgIHRleHQ6IFwiRW50cnkgMVwiLFxuICAgICAgICAgICAgbGluazogXCJodHRwczovL3d3dy5nb29nbGUuY29tXCIsXG4gICAgICAgICAgICBpbWFnZTogXCJodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iL2IvYjYvSW1hZ2VfY3JlYXRlZF93aXRoX2FfbW9iaWxlX3Bob25lLnBuZy8yNTBweC1JbWFnZV9jcmVhdGVkX3dpdGhfYV9tb2JpbGVfcGhvbmUucG5nXCJcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgICAgdGV4dDogXCJFbnRyeSAyXCIsXG4gICAgICAgICAgICBsaW5rOiBcImh0dHBzOi8vd3d3Lmdvb2dsZS5jb21cIixcbiAgICAgICAgICAgIGltYWdlOiBcImh0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvYi9iNi9JbWFnZV9jcmVhdGVkX3dpdGhfYV9tb2JpbGVfcGhvbmUucG5nLzI1MHB4LUltYWdlX2NyZWF0ZWRfd2l0aF9hX21vYmlsZV9waG9uZS5wbmdcIlxuICAgICAgICB9LFxuICAgICAgICB7XG4gICAgICAgICAgICB0ZXh0OiBcIkVudHJ5IDNcIixcbiAgICAgICAgICAgIGxpbms6IFwiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbVwiLFxuICAgICAgICAgICAgaW1hZ2U6IFwiaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi9iL2I2L0ltYWdlX2NyZWF0ZWRfd2l0aF9hX21vYmlsZV9waG9uZS5wbmcvMjUwcHgtSW1hZ2VfY3JlYXRlZF93aXRoX2FfbW9iaWxlX3Bob25lLnBuZ1wiXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICAgIHRleHQ6IFwiRW50cnkgNFwiLFxuICAgICAgICAgICAgbGluazogXCJodHRwczovL3d3dy5nb29nbGUuY29tXCIsXG4gICAgICAgICAgICBpbWFnZTogXCJodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iL2IvYjYvSW1hZ2VfY3JlYXRlZF93aXRoX2FfbW9iaWxlX3Bob25lLnBuZy8yNTBweC1JbWFnZV9jcmVhdGVkX3dpdGhfYV9tb2JpbGVfcGhvbmUucG5nXCJcbiAgICAgICAgfSovXG4gICAgXSk7XG5cbiAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgICBjb25zb2xlLmxvZyhcIkZldGNoaW5nIGRhdGEgZnJvbSBDbGllbnRzaWRlXCIpO1xuICAgICAgICBheGlvcy5nZXQoQVBJX1VSTClcbiAgICAgICAgICAgIC50aGVuKChyZXNwb25zZTogQXhpb3NSZXNwb25zZTxFbnRyeVtdPikgPT4ge1xuICAgICAgICAgICAgICAgIHNldEVudHJpZXMocmVzcG9uc2UuZGF0YSk7XG4gICAgICAgICAgICB9KS5jYXRjaCgoZXJyb3IpID0+IHtcbiAgICAgICAgICAgICAgICBjb25zb2xlLmVycm9yKCdFcnJvciBmZXRjaGluZyBkYXRhIGZyb20gQ2xpZW50c2lkZTonLCBlcnJvcik7XG4gICAgICAgICAgICB9KS5maW5hbGx5KCgpID0+IHtcbiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhcIkZpbmlzaGVkIGZldGNoaW5nIGRhdGFcIik7XG4gICAgICAgICAgICB9KVxuICAgIH0sIFtdKTtcblxuICByZXR1cm4gKFxuICAgIDw+XG4gICAgPE5hdmJhciAvPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtMyBtLTUgZ2FwLTRcIj5cbiAgICB7ZW50cmllcy5tYXAoKGVudHJ5LCBpbmRleCkgPT4gKFxuICAgICAgICA8ZGl2IGtleT17aW5kZXh9IGNsYXNzTmFtZT1cImVudHJ5XCI+XG4gICAgICAgICAgICA8YSBocmVmPXtlbnRyeS5saW5rfSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub29wZW5lciBub3JlZmVycmVyXCI+XG4gICAgICAgICAgICAgICAgPGltZyBzcmM9e2VudHJ5LmltYWdlfSBhbHQ9e2VudHJ5LnRleHR9IC8+XG4gICAgICAgICAgICAgICAgPHA+e2VudHJ5LnRleHR9PC9wPlxuICAgICAgICAgICAgPC9hPlxuICAgICAgICA8L2Rpdj5cbiAgICApKX1cbiAgICA8L2Rpdj5cbiAgICA8Lz5cbiAgICBcblxuICApO1xufVxuIl0sIm5hbWVzIjpbInVzZUVmZmVjdCIsInVzZVN0YXRlIiwiTmF2YmFyIiwiYXhpb3MiLCJBUElfVVJMIiwiU2VhcmNoIiwiZW50cmllcyIsInNldEVudHJpZXMiLCJjb25zb2xlIiwibG9nIiwiZ2V0IiwidGhlbiIsInJlc3BvbnNlIiwiZGF0YSIsImNhdGNoIiwiZXJyb3IiLCJmaW5hbGx5IiwiZGl2IiwiY2xhc3NOYW1lIiwibWFwIiwiZW50cnkiLCJpbmRleCIsImEiLCJocmVmIiwibGluayIsInRhcmdldCIsInJlbCIsImltZyIsInNyYyIsImltYWdlIiwiYWx0IiwidGV4dCIsInAiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./app/search/page.tsx\n");
 
 /***/ }),
 
@@ -216,6 +216,82 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 /***/ }),
 
+/***/ "?4c03":
+/*!***********************!*\
+  !*** debug (ignored) ***!
+  \***********************/
+/***/ (() => {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
 /***/ "module":
 /*!*************************!*\
   !*** external "module" ***!
@@ -282,6 +358,28 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
 /***/ "util":
 /*!***********************!*\
   !*** external "util" ***!
@@ -290,6 +388,17 @@ module.exports = require("path");
 
 "use strict";
 module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ })
 
@@ -300,7 +409,7 @@ module.exports = require("util");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fsearch%2Fpage&page=%2Fsearch%2Fpage&appPaths=%2Fsearch%2Fpage&pagePath=private-next-app-dir%2Fsearch%2Fpage.tsx&appDir=%2Fworkspaces%2Fflixhub%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fworkspaces%2Fflixhub&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/follow-redirects","vendor-chunks/form-data","vendor-chunks/get-intrinsic","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/has-symbols","vendor-chunks/delayed-stream","vendor-chunks/function-bind","vendor-chunks/es-set-tostringtag","vendor-chunks/get-proto","vendor-chunks/call-bind-apply-helpers","vendor-chunks/dunder-proto","vendor-chunks/math-intrinsics","vendor-chunks/es-errors","vendor-chunks/gopd","vendor-chunks/es-define-property","vendor-chunks/hasown","vendor-chunks/has-tostringtag","vendor-chunks/es-object-atoms"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fsearch%2Fpage&page=%2Fsearch%2Fpage&appPaths=%2Fsearch%2Fpage&pagePath=private-next-app-dir%2Fsearch%2Fpage.tsx&appDir=%2Fworkspaces%2Fflixhub%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fworkspaces%2Fflixhub&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!")));
 module.exports = __webpack_exports__;
 
 })();
