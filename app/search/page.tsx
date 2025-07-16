@@ -18,6 +18,7 @@ function SendPostRequest(url: string) {
 }
 export default function Search() {
     const searchQuery = useSearchParams().get('q') || '';
+    let [loadingText, setLoadingText] = useState<string>("Loading...");
     let [entries, setEntries] = useState<Entry[]>([/*
         {
             text: "Entry 1",
@@ -50,7 +51,7 @@ export default function Search() {
                         .then((response: AxiosResponse<Entry[]>) => {
                             setEntries(response.data);
                             if (response.data.length == 0) {
-                                console.log("No entries found for the search query.");
+                                setLoadingText("No results found.");
                             }
 
                         })
@@ -70,7 +71,7 @@ export default function Search() {
             <Navbar />
             <div className="grid grid-cols-3 m-5 gap-4">
                 {
-                    entries.length == 0 ? <span>Loading...</span> : <></>
+                    entries.length == 0 ? <span>{loadingText}</span> : <></>
                 }
                 {
                     entries.map((entry, index) => (
