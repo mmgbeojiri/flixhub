@@ -19,7 +19,7 @@ exports.modules = {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   GET: () => (/* binding */ GET),\n/* harmony export */   POST: () => (/* binding */ POST)\n/* harmony export */ });\n/* harmony import */ var next_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/server */ \"(rsc)/./node_modules/next/dist/api/server.js\");\n// app/api/users/route.ts\n\nconst urlPrefix = \"https://lookmovie.onl/?s=\";\n// We use .onl because .to is blocked on school networks.\nlet searchUrl = \"\";\nasync function GET(request) {\n    // Handle GET requests to /api/users\n    // Access request data (e.g., query parameters, headers) from 'request'\n    // Return a Next.js Response object\n    return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json(\"ahhhh\");\n}\nasync function POST(request) {\n    // Handle POST requests to /api/users\n    const { url } = await request.json(); // Parse request body as JSON\n    searchUrl = urlPrefix + url;\n    // Perform backend logic (e.g., save data to a database)\n    console.log('Received data:', searchUrl);\n    return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n        message: 'Message got created successfully',\n        data: url\n    });\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvYXBpL3NlYXJjaC9yb3V0ZS50cyIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBSSx5QkFBeUI7QUFFYztBQU92QyxNQUFNQyxZQUFtQjtBQUN6Qix5REFBeUQ7QUFDekQsSUFBSUMsWUFBbUI7QUFFaEIsZUFBZUMsSUFBSUMsT0FBb0I7SUFDNUMsb0NBQW9DO0lBQ3BDLHVFQUF1RTtJQUV2RSxtQ0FBbUM7SUFDbkMsT0FBT0oscURBQVlBLENBQUNLLElBQUksQ0FBQztBQUMzQjtBQUVPLGVBQWVDLEtBQUtGLE9BQW9CO0lBQzdDLHFDQUFxQztJQUNyQyxNQUFNLEVBQUVHLEdBQUcsRUFBRSxHQUFnQixNQUFNSCxRQUFRQyxJQUFJLElBQUksNkJBQTZCO0lBQ2hGSCxZQUFZRCxZQUFZTTtJQUN4Qix3REFBd0Q7SUFDeERDLFFBQVFDLEdBQUcsQ0FBQyxrQkFBa0JQO0lBSTlCLE9BQU9GLHFEQUFZQSxDQUFDSyxJQUFJLENBQUM7UUFBRUssU0FBUztRQUFvQ0MsTUFBTUo7SUFBSTtBQUNwRiIsInNvdXJjZXMiOlsiL3dvcmtzcGFjZXMvZmxpeGh1Yi9hcHAvYXBpL3NlYXJjaC9yb3V0ZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgICAgLy8gYXBwL2FwaS91c2Vycy9yb3V0ZS50c1xuICAgIGltcG9ydCB7IHVybCB9IGZyb20gJ2luc3BlY3Rvcic7XG5pbXBvcnQgeyBOZXh0UmVzcG9uc2UgfSBmcm9tICduZXh0L3NlcnZlcic7XG4gICAgaW1wb3J0IHR5cGUgeyBOZXh0UmVxdWVzdCB9IGZyb20gJ25leHQvc2VydmVyJztcbiAgICBpbXBvcnQgeyBDaGVlcmlvIH0gZnJvbSAnY2hlZXJpbyc7XG4gICAgaW50ZXJmYWNlIHJlcXVlc3RCb2R5IHtcbiAgICAgIHVybDogc3RyaW5nO1xuICAgIH1cblxuICAgIGNvbnN0IHVybFByZWZpeDpzdHJpbmcgPSBcImh0dHBzOi8vbG9va21vdmllLm9ubC8/cz1cIlxuICAgIC8vIFdlIHVzZSAub25sIGJlY2F1c2UgLnRvIGlzIGJsb2NrZWQgb24gc2Nob29sIG5ldHdvcmtzLlxuICAgIGxldCBzZWFyY2hVcmw6c3RyaW5nID0gXCJcIjtcblxuICAgIGV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHtcbiAgICAgIC8vIEhhbmRsZSBHRVQgcmVxdWVzdHMgdG8gL2FwaS91c2Vyc1xuICAgICAgLy8gQWNjZXNzIHJlcXVlc3QgZGF0YSAoZS5nLiwgcXVlcnkgcGFyYW1ldGVycywgaGVhZGVycykgZnJvbSAncmVxdWVzdCdcblxuICAgICAgLy8gUmV0dXJuIGEgTmV4dC5qcyBSZXNwb25zZSBvYmplY3RcbiAgICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbihcImFoaGhoXCIpO1xuICAgIH1cblxuICAgIGV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7XG4gICAgICAvLyBIYW5kbGUgUE9TVCByZXF1ZXN0cyB0byAvYXBpL3VzZXJzXG4gICAgICBjb25zdCB7IHVybCB9OiByZXF1ZXN0Qm9keSA9IGF3YWl0IHJlcXVlc3QuanNvbigpOyAvLyBQYXJzZSByZXF1ZXN0IGJvZHkgYXMgSlNPTlxuICAgICAgc2VhcmNoVXJsID0gdXJsUHJlZml4ICsgdXJsO1xuICAgICAgLy8gUGVyZm9ybSBiYWNrZW5kIGxvZ2ljIChlLmcuLCBzYXZlIGRhdGEgdG8gYSBkYXRhYmFzZSlcbiAgICAgIGNvbnNvbGUubG9nKCdSZWNlaXZlZCBkYXRhOicsIHNlYXJjaFVybCk7XG5cbiAgICAgIFxuXG4gICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBtZXNzYWdlOiAnTWVzc2FnZSBnb3QgY3JlYXRlZCBzdWNjZXNzZnVsbHknLCBkYXRhOiB1cmwgfSk7XG4gICAgfSJdLCJuYW1lcyI6WyJOZXh0UmVzcG9uc2UiLCJ1cmxQcmVmaXgiLCJzZWFyY2hVcmwiLCJHRVQiLCJyZXF1ZXN0IiwianNvbiIsIlBPU1QiLCJ1cmwiLCJjb25zb2xlIiwibG9nIiwibWVzc2FnZSIsImRhdGEiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./app/api/search/route.ts\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   GET: () => (/* binding */ GET),\n/* harmony export */   POST: () => (/* binding */ POST)\n/* harmony export */ });\n/* harmony import */ var next_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/server */ \"(rsc)/./node_modules/next/dist/api/server.js\");\n/* harmony import */ var cheerio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cheerio */ \"(rsc)/./node_modules/cheerio/dist/esm/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"(rsc)/./node_modules/axios/lib/axios.js\");\n// app/api/users/route.ts\n\n\n\nconst urlPrefix = \"https://lookmovie.onl/?s=\";\n// We use .onl because .to is blocked on school networks.\nlet searchUrl = \"\";\nlet entries = [];\nasync function GET(request) {\n    // Handle GET requests to /api/users\n    // Access request data (e.g., query parameters, headers) from 'request'\n    // Return a Next.js Response object\n    return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json(entries);\n}\nasync function POST(request) {\n    // Handle POST requests to /api/users\n    const { url } = await request.json(); // Parse request body as JSON\n    searchUrl = urlPrefix + url;\n    // Perform backend logic (e.g., save data to a database)\n    console.log('Received data:', searchUrl);\n    axios__WEBPACK_IMPORTED_MODULE_2__[\"default\"].get(searchUrl).then((response)=>{\n        let $ = cheerio__WEBPACK_IMPORTED_MODULE_1__.load(response.data);\n        $(\"#main article\").each((index, element)=>{\n            let newEntry = {\n                text: $(element).find(\".entry-title\").text() || \"\",\n                link: $(element).find(\"a\").attr(\"href\") || \"\",\n                image: $(element).find(\"div img\").attr(\"src\") || \"\"\n            };\n            entries.push(newEntry);\n            console.log(newEntry);\n        });\n    }).catch((error)=>{\n        console.error('Error fetching data:', error);\n        return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n            error: 'Failed to fetch data'\n        }, {\n            status: 500\n        });\n    }).finally(()=>{\n        console.log(\"Finished fetching data\");\n    });\n    return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n        message: 'Message got created successfully',\n        data: url\n    });\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvYXBpL3NlYXJjaC9yb3V0ZS50cyIsIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBLHlCQUF5QjtBQUVrQjtBQUVSO0FBQ1Q7QUFTMUIsTUFBTUcsWUFBb0I7QUFDMUIseURBQXlEO0FBQ3pELElBQUlDLFlBQW9CO0FBQ3hCLElBQUlDLFVBQW1CLEVBQUU7QUFFbEIsZUFBZUMsSUFBSUMsT0FBb0I7SUFDNUMsb0NBQW9DO0lBQ3BDLHVFQUF1RTtJQUV2RSxtQ0FBbUM7SUFDbkMsT0FBT1AscURBQVlBLENBQUNRLElBQUksQ0FBQ0g7QUFDM0I7QUFFTyxlQUFlSSxLQUFLRixPQUFvQjtJQUM3QyxxQ0FBcUM7SUFDckMsTUFBTSxFQUFFRyxHQUFHLEVBQUUsR0FBZ0IsTUFBTUgsUUFBUUMsSUFBSSxJQUFJLDZCQUE2QjtJQUNoRkosWUFBWUQsWUFBWU87SUFDeEIsd0RBQXdEO0lBQ3hEQyxRQUFRQyxHQUFHLENBQUMsa0JBQWtCUjtJQUU5QkYsNkNBQUtBLENBQUNXLEdBQUcsQ0FBQ1QsV0FBV1UsSUFBSSxDQUFDLENBQUNDO1FBQ3pCLElBQUlDLElBQUlmLHlDQUFZLENBQUNjLFNBQVNHLElBQUk7UUFFbENGLEVBQUUsaUJBQWlCRyxJQUFJLENBQUMsQ0FBQ0MsT0FBT0M7WUFDOUIsSUFBSUMsV0FBa0I7Z0JBQ3BCQyxNQUFNUCxFQUFFSyxTQUFTRyxJQUFJLENBQUMsZ0JBQWdCRCxJQUFJLE1BQU07Z0JBQ2hERSxNQUFNVCxFQUFFSyxTQUFTRyxJQUFJLENBQUMsS0FBS0UsSUFBSSxDQUFDLFdBQVc7Z0JBQzNDQyxPQUFPWCxFQUFFSyxTQUFTRyxJQUFJLENBQUMsV0FBV0UsSUFBSSxDQUFDLFVBQVU7WUFDbkQ7WUFDQXJCLFFBQVF1QixJQUFJLENBQUNOO1lBQ2JYLFFBQVFDLEdBQUcsQ0FBQ1U7UUFDZDtJQUNGLEdBQUdPLEtBQUssQ0FBQyxDQUFDQztRQUNSbkIsUUFBUW1CLEtBQUssQ0FBQyx3QkFBd0JBO1FBQ3RDLE9BQU85QixxREFBWUEsQ0FBQ1EsSUFBSSxDQUFDO1lBQUVzQixPQUFPO1FBQXVCLEdBQUc7WUFBRUMsUUFBUTtRQUFJO0lBQzVFLEdBQUdDLE9BQU8sQ0FBQztRQUNUckIsUUFBUUMsR0FBRyxDQUFDO0lBQ2Q7SUFFQSxPQUFPWixxREFBWUEsQ0FBQ1EsSUFBSSxDQUFDO1FBQUV5QixTQUFTO1FBQW9DZixNQUFNUjtJQUFJO0FBQ3BGIiwic291cmNlcyI6WyIvd29ya3NwYWNlcy9mbGl4aHViL2FwcC9hcGkvc2VhcmNoL3JvdXRlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGFwcC9hcGkvdXNlcnMvcm91dGUudHNcbmltcG9ydCB7IHVybCB9IGZyb20gJ2luc3BlY3Rvcic7XG5pbXBvcnQgeyBOZXh0UmVzcG9uc2UgfSBmcm9tICduZXh0L3NlcnZlcic7XG5pbXBvcnQgdHlwZSB7IE5leHRSZXF1ZXN0IH0gZnJvbSAnbmV4dC9zZXJ2ZXInO1xuaW1wb3J0ICogYXMgY2hlZXJpbyBmcm9tICdjaGVlcmlvJzsgXG5pbXBvcnQgYXhpb3MgZnJvbSAnYXhpb3MnO1xuaW50ZXJmYWNlIHJlcXVlc3RCb2R5IHtcbiAgdXJsOiBzdHJpbmc7XG59XG5pbnRlcmZhY2UgRW50cnkge1xuICAgIHRleHQ6IHN0cmluZztcbiAgICBsaW5rOiBzdHJpbmc7XG4gICAgaW1hZ2U6IHN0cmluZztcbn1cbmNvbnN0IHVybFByZWZpeDogc3RyaW5nID0gXCJodHRwczovL2xvb2ttb3ZpZS5vbmwvP3M9XCJcbi8vIFdlIHVzZSAub25sIGJlY2F1c2UgLnRvIGlzIGJsb2NrZWQgb24gc2Nob29sIG5ldHdvcmtzLlxubGV0IHNlYXJjaFVybDogc3RyaW5nID0gXCJcIjtcbmxldCBlbnRyaWVzOiBFbnRyeVtdID0gW107XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxdWVzdDogTmV4dFJlcXVlc3QpIHtcbiAgLy8gSGFuZGxlIEdFVCByZXF1ZXN0cyB0byAvYXBpL3VzZXJzXG4gIC8vIEFjY2VzcyByZXF1ZXN0IGRhdGEgKGUuZy4sIHF1ZXJ5IHBhcmFtZXRlcnMsIGhlYWRlcnMpIGZyb20gJ3JlcXVlc3QnXG5cbiAgLy8gUmV0dXJuIGEgTmV4dC5qcyBSZXNwb25zZSBvYmplY3RcbiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKGVudHJpZXMpO1xufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXF1ZXN0OiBOZXh0UmVxdWVzdCkge1xuICAvLyBIYW5kbGUgUE9TVCByZXF1ZXN0cyB0byAvYXBpL3VzZXJzXG4gIGNvbnN0IHsgdXJsIH06IHJlcXVlc3RCb2R5ID0gYXdhaXQgcmVxdWVzdC5qc29uKCk7IC8vIFBhcnNlIHJlcXVlc3QgYm9keSBhcyBKU09OXG4gIHNlYXJjaFVybCA9IHVybFByZWZpeCArIHVybDtcbiAgLy8gUGVyZm9ybSBiYWNrZW5kIGxvZ2ljIChlLmcuLCBzYXZlIGRhdGEgdG8gYSBkYXRhYmFzZSlcbiAgY29uc29sZS5sb2coJ1JlY2VpdmVkIGRhdGE6Jywgc2VhcmNoVXJsKTtcblxuICBheGlvcy5nZXQoc2VhcmNoVXJsKS50aGVuKChyZXNwb25zZSkgPT4ge1xuICAgIGxldCAkID0gY2hlZXJpby5sb2FkKHJlc3BvbnNlLmRhdGEpO1xuXG4gICAgJChcIiNtYWluIGFydGljbGVcIikuZWFjaCgoaW5kZXgsIGVsZW1lbnQpID0+IHtcbiAgICAgIGxldCBuZXdFbnRyeTogRW50cnkgPSB7XG4gICAgICAgIHRleHQ6ICQoZWxlbWVudCkuZmluZChcIi5lbnRyeS10aXRsZVwiKS50ZXh0KCkgfHwgXCJcIixcbiAgICAgICAgbGluazogJChlbGVtZW50KS5maW5kKFwiYVwiKS5hdHRyKFwiaHJlZlwiKSB8fCBcIlwiLFxuICAgICAgICBpbWFnZTogJChlbGVtZW50KS5maW5kKFwiZGl2IGltZ1wiKS5hdHRyKFwic3JjXCIpIHx8IFwiXCJcbiAgICAgIH1cbiAgICAgIGVudHJpZXMucHVzaChuZXdFbnRyeSk7XG4gICAgICBjb25zb2xlLmxvZyhuZXdFbnRyeSk7XG4gICAgfSlcbiAgfSkuY2F0Y2goKGVycm9yKSA9PiB7XG4gICAgY29uc29sZS5lcnJvcignRXJyb3IgZmV0Y2hpbmcgZGF0YTonLCBlcnJvcik7XG4gICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgZXJyb3I6ICdGYWlsZWQgdG8gZmV0Y2ggZGF0YScgfSwgeyBzdGF0dXM6IDUwMCB9KTtcbiAgfSkuZmluYWxseSgoKSA9PiB7XG4gICAgY29uc29sZS5sb2coXCJGaW5pc2hlZCBmZXRjaGluZyBkYXRhXCIpXG4gIH0pO1xuXG4gIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IG1lc3NhZ2U6ICdNZXNzYWdlIGdvdCBjcmVhdGVkIHN1Y2Nlc3NmdWxseScsIGRhdGE6IHVybCB9KTtcbn0iXSwibmFtZXMiOlsiTmV4dFJlc3BvbnNlIiwiY2hlZXJpbyIsImF4aW9zIiwidXJsUHJlZml4Iiwic2VhcmNoVXJsIiwiZW50cmllcyIsIkdFVCIsInJlcXVlc3QiLCJqc29uIiwiUE9TVCIsInVybCIsImNvbnNvbGUiLCJsb2ciLCJnZXQiLCJ0aGVuIiwicmVzcG9uc2UiLCIkIiwibG9hZCIsImRhdGEiLCJlYWNoIiwiaW5kZXgiLCJlbGVtZW50IiwibmV3RW50cnkiLCJ0ZXh0IiwiZmluZCIsImxpbmsiLCJhdHRyIiwiaW1hZ2UiLCJwdXNoIiwiY2F0Y2giLCJlcnJvciIsInN0YXR1cyIsImZpbmFsbHkiLCJtZXNzYWdlIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./app/api/search/route.ts\n");
 
 /***/ }),
 
@@ -87,6 +87,93 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 /***/ }),
 
+/***/ "?4c03":
+/*!***********************!*\
+  !*** debug (ignored) ***!
+  \***********************/
+/***/ (() => {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "buffer":
+/*!*************************!*\
+  !*** external "buffer" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("buffer");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
 /***/ "next/dist/compiled/next-server/app-page.runtime.dev.js":
 /*!*************************************************************************!*\
   !*** external "next/dist/compiled/next-server/app-page.runtime.dev.js" ***!
@@ -129,6 +216,303 @@ module.exports = require("next/dist/shared/lib/no-fallback-error.external");
 "use strict";
 module.exports = require("next/dist/shared/lib/router/utils/app-paths");
 
+/***/ }),
+
+/***/ "node:assert":
+/*!******************************!*\
+  !*** external "node:assert" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:assert");
+
+/***/ }),
+
+/***/ "node:async_hooks":
+/*!***********************************!*\
+  !*** external "node:async_hooks" ***!
+  \***********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:async_hooks");
+
+/***/ }),
+
+/***/ "node:buffer":
+/*!******************************!*\
+  !*** external "node:buffer" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:buffer");
+
+/***/ }),
+
+/***/ "node:console":
+/*!*******************************!*\
+  !*** external "node:console" ***!
+  \*******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:console");
+
+/***/ }),
+
+/***/ "node:crypto":
+/*!******************************!*\
+  !*** external "node:crypto" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:crypto");
+
+/***/ }),
+
+/***/ "node:diagnostics_channel":
+/*!*******************************************!*\
+  !*** external "node:diagnostics_channel" ***!
+  \*******************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:diagnostics_channel");
+
+/***/ }),
+
+/***/ "node:dns":
+/*!***************************!*\
+  !*** external "node:dns" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:dns");
+
+/***/ }),
+
+/***/ "node:events":
+/*!******************************!*\
+  !*** external "node:events" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:events");
+
+/***/ }),
+
+/***/ "node:http":
+/*!****************************!*\
+  !*** external "node:http" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:http");
+
+/***/ }),
+
+/***/ "node:http2":
+/*!*****************************!*\
+  !*** external "node:http2" ***!
+  \*****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:http2");
+
+/***/ }),
+
+/***/ "node:net":
+/*!***************************!*\
+  !*** external "node:net" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:net");
+
+/***/ }),
+
+/***/ "node:perf_hooks":
+/*!**********************************!*\
+  !*** external "node:perf_hooks" ***!
+  \**********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:perf_hooks");
+
+/***/ }),
+
+/***/ "node:querystring":
+/*!***********************************!*\
+  !*** external "node:querystring" ***!
+  \***********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:querystring");
+
+/***/ }),
+
+/***/ "node:sqlite":
+/*!******************************!*\
+  !*** external "node:sqlite" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:sqlite");
+
+/***/ }),
+
+/***/ "node:stream":
+/*!******************************!*\
+  !*** external "node:stream" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:stream");
+
+/***/ }),
+
+/***/ "node:tls":
+/*!***************************!*\
+  !*** external "node:tls" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:tls");
+
+/***/ }),
+
+/***/ "node:url":
+/*!***************************!*\
+  !*** external "node:url" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:url");
+
+/***/ }),
+
+/***/ "node:util":
+/*!****************************!*\
+  !*** external "node:util" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:util");
+
+/***/ }),
+
+/***/ "node:util/types":
+/*!**********************************!*\
+  !*** external "node:util/types" ***!
+  \**********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:util/types");
+
+/***/ }),
+
+/***/ "node:worker_threads":
+/*!**************************************!*\
+  !*** external "node:worker_threads" ***!
+  \**************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:worker_threads");
+
+/***/ }),
+
+/***/ "node:zlib":
+/*!****************************!*\
+  !*** external "node:zlib" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:zlib");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("path");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "string_decoder":
+/*!*********************************!*\
+  !*** external "string_decoder" ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("string_decoder");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
+
 /***/ })
 
 };
@@ -138,7 +522,7 @@ module.exports = require("next/dist/shared/lib/router/utils/app-paths");
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fsearch%2Froute&page=%2Fapi%2Fsearch%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Fsearch%2Froute.ts&appDir=%2Fworkspaces%2Fflixhub%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fworkspaces%2Fflixhub&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/follow-redirects","vendor-chunks/form-data","vendor-chunks/get-intrinsic","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/has-symbols","vendor-chunks/delayed-stream","vendor-chunks/function-bind","vendor-chunks/es-set-tostringtag","vendor-chunks/get-proto","vendor-chunks/call-bind-apply-helpers","vendor-chunks/dunder-proto","vendor-chunks/math-intrinsics","vendor-chunks/es-errors","vendor-chunks/gopd","vendor-chunks/es-define-property","vendor-chunks/hasown","vendor-chunks/has-tostringtag","vendor-chunks/es-object-atoms","vendor-chunks/undici","vendor-chunks/iconv-lite","vendor-chunks/parse5","vendor-chunks/cheerio","vendor-chunks/css-select","vendor-chunks/entities","vendor-chunks/domutils","vendor-chunks/htmlparser2","vendor-chunks/whatwg-mimetype","vendor-chunks/nth-check","vendor-chunks/cheerio-select","vendor-chunks/whatwg-encoding","vendor-chunks/encoding-sniffer","vendor-chunks/domhandler","vendor-chunks/dom-serializer","vendor-chunks/css-what","vendor-chunks/parse5-parser-stream","vendor-chunks/parse5-htmlparser2-tree-adapter","vendor-chunks/domelementtype","vendor-chunks/safer-buffer","vendor-chunks/boolbase"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fsearch%2Froute&page=%2Fapi%2Fsearch%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Fsearch%2Froute.ts&appDir=%2Fworkspaces%2Fflixhub%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fworkspaces%2Fflixhub&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!")));
 module.exports = __webpack_exports__;
 
 })();

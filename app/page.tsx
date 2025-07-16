@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import axios from "axios";
 
 const API_URL:string = '/api/search';
@@ -10,6 +11,7 @@ function SendPostRequest(url: string) {
   axios.post(API_URL, { "url": plusUrl });
 }
 export default function Home() {
+  const router = useRouter();
   const [inputText, setInputText] = useState<string>("");
   return (
     <div className="flex w-screen h-screen justify-center items-center flex-col">
@@ -20,6 +22,7 @@ export default function Home() {
         (e) => {
           e.preventDefault();
           SendPostRequest(inputText);
+          router.push("/search");
         }} className="flex-1 !border-l-0 !rounded-l-none !bg-blue-500 !text-slate-50" value="Search"/>
       </div>
       </div>
