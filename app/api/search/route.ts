@@ -20,19 +20,21 @@ let entries: Entry[] = [];
 export async function GET(request: NextRequest) {
   // Handle GET requests to /api/users
   // Access request data (e.g., query parameters, headers) from 'request'
-
+  // wait for entries to be populated
+  
   // Return a Next.js Response object
   return NextResponse.json(entries);
 }
 
 export async function POST(request: NextRequest) {
   // Handle POST requests to /api/users
+  entries = [];
   const { url }: requestBody = await request.json(); // Parse request body as JSON
   searchUrl = urlPrefix + url;
   // Perform backend logic (e.g., save data to a database)
   console.log('Received data:', searchUrl);
 
-  axios.get(searchUrl).then((response) => {
+  await axios.get(searchUrl).then((response) => {
     let $ = cheerio.load(response.data);
 
     $("#main article").each((index, element) => {

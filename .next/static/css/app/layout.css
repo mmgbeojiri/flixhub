@@ -529,7 +529,7 @@ input {
 }
 .entry image {
   height: 100%;
-  width: 100%;
+  max-width: calc(var(--spacing) * 2);
   border-top-left-radius: var(--radius-xl);
   border-bottom-left-radius: var(--radius-xl);
   object-fit: cover;

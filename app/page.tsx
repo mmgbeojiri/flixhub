@@ -6,10 +6,7 @@ import axios from "axios";
 
 const API_URL:string = '/api/search';
 
-function SendPostRequest(url: string) {
-  let plusUrl: string = url.replaceAll(" ", "+");
-  axios.post(API_URL, { "url": plusUrl });
-}
+
 export default function Home() {
   const router = useRouter();
   const [inputText, setInputText] = useState<string>("");
@@ -21,8 +18,7 @@ export default function Home() {
       <input type="submit" onClick={
         (e) => {
           e.preventDefault();
-          SendPostRequest(inputText);
-          router.push("/search");
+          router.push(`/search?q=${encodeURIComponent(inputText)}`);
         }} className="flex-1 !border-l-0 !rounded-l-none !bg-blue-500 !text-slate-50" value="Search"/>
       </div>
       </div>

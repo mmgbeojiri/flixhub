@@ -44,7 +44,7 @@ input {
 }
 
 .entry image {
-  @apply w-full h-full object-cover rounded-l-xl
+  @apply max-w-2 h-full object-cover rounded-l-xl
 }
 
 .entry p {
