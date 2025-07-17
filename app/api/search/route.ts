@@ -71,19 +71,13 @@ export async function POST(request: NextRequest) {
         let newEntry: Entry = {
           text: $(element).find(".mv-item-infor h6 a").text() || "",
           link: $(element).find(".mv-item-infor h6 a").attr("href") || "",
-          image: $(element).find(".image__placeholder a img").attr("src") || ""
-          // engineering problem, the image is in base 64. WHAT DO I DO
+          image: $(element).find(".image__placeholder a img").attr("data-src") || ""
 
         }
         // place https://ww1.lookmovie.pn/ before the link
         newEntry.link = "https://ww1.lookmovie.pn" + newEntry.link;
+        newEntry.image = "https://ww1.lookmovie.pn/" + newEntry.image;
 
-        // covert base64 image to a url
-        fetch(newEntry.image)
-        .then(response => response.blob())
-        .then(blob => {
-            newEntry.image = URL.createObjectURL(blob);
-        });
         
 
         entries.push(newEntry);
