@@ -59,6 +59,10 @@ export async function POST(request: NextRequest) {
   console.log('Received data:', searchUrl);
 
   await axios.get(searchUrl).then(async (response) => {
+    if (mode == "123movies") {
+      //wait one second
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
     let $ = cheerio.load(response.data);
     
     if (mode == "onl") {
@@ -93,9 +97,14 @@ export async function POST(request: NextRequest) {
     }
 
     if (mode == "123movies") {
-      
+      console.log($('main .card').html());
       $("#resdata .col").each((index, element) => {
-        console.log($(element).children("div"));
+        //you have to try to find what loaded html cheerio is looking at
+
+        console.log($(element).attr("class"));
+        console.log($(element).attr("id"));
+        console.log("children")
+        console.log($(element).children('div').attr("class"));
 
         let newEntry: Entry = {
           text: $(element).find(".card").find(".card-body").find("h2").text() || "",
