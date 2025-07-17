@@ -42,7 +42,12 @@ export async function POST(request: NextRequest) {
   // Handle POST requests to /api/users
   entries = [];
   const { url }: requestBody = await request.json(); // Parse request body as JSON
+  if (mode == "onl") {
   searchUrl = urlPrefix + url;
+  }
+  if (mode == "pn") {
+    searchUrl = urlMoviePrefix + url;
+  }
   // Perform backend logic (e.g., save data to a database)
   console.log('Received data:', searchUrl);
 
@@ -58,8 +63,8 @@ export async function POST(request: NextRequest) {
         }
         entries.push(newEntry);
         console.log(newEntry);
-      } 
-    )};
+      });
+    }
 
     if (mode == "pn") {
       $(".movie-item-style-2").each((index, element) => {
@@ -67,7 +72,20 @@ export async function POST(request: NextRequest) {
           text: $(element).find(".mv-item-infor h6 a").text() || "",
           link: $(element).find(".mv-item-infor h6 a").attr("href") || "",
           image: $(element).find(".image__placeholder a img").attr("src") || ""
+          // engineering problem, the image is in base 64. WHAT DO I DO
+
         }
+        // place https://ww1.lookmovie.pn/ before the link
+        newEntry.link = "https://ww1.lookmovie.pn" + newEntry.link;
+
+        // covert base64 image to a url
+        fetch(newEntry.image)
+        .then(response => response.blob())
+        .then(blob => {
+            newEntry.image = URL.createObjectURL(blob);
+        });
+        
+
         entries.push(newEntry);
         console.log(newEntry);
       });
