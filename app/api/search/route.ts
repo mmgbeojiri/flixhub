@@ -49,8 +49,8 @@ export async function POST(request: NextRequest) {
   await axios.get(searchUrl).then((response) => {
     let $ = cheerio.load(response.data);
     
+    if (mode == "onl") {
     $("#main article").each((index, element) => {
-      if (mode == "onl") {
         let newEntry: Entry = {
           text: $(element).find(".entry-title").text() || "",
           link: $(element).find("a").attr("href") || "",
@@ -58,16 +58,29 @@ export async function POST(request: NextRequest) {
         }
         entries.push(newEntry);
         console.log(newEntry);
-      }
+      } 
+    )};
+
+    if (mode == "pn") {
+      $(".movie-item-style-2").each((index, element) => {
+        let newEntry: Entry = {
+          text: $(element).find(".mv-item-infor h6 a").text() || "",
+          link: $(element).find(".mv-item-infor h6 a").attr("href") || "",
+          image: $(element).find(".image__placeholder a img").attr("src") || ""
+        }
+        entries.push(newEntry);
+        console.log(newEntry);
       });
+    }
 
 
   }).catch((error) => {
     console.error('Error fetching data:', error);
     return NextResponse.json({ error: 'Failed to fetch data' }, { status: 500 });
   }).finally(() => {
-      console.log("Finished fetching data")
-    });
+      console.log("Finished fetching data");
+  });
+
 
 
 return NextResponse.json({ message: 'Message got created successfully', data: url });
