@@ -13,11 +13,17 @@ interface Entry {
   image: string;
 }
 
-const mode = "onl";
+const mode = "pn";
 
 let urlPrefix:string;
+let urlMoviePrefix: string;
+let urlShowsPrefix: string;
+
 if (mode == "onl") { 
   urlPrefix = "https://lookmovie.onl/?s="
+} else if (mode == "pn") {
+  urlMoviePrefix = "https://ww1.lookmovie.pn/movies/search/?q="
+  urlShowsPrefix = "https://ww1.lookmovie.pn/shows/search/?q="
 }
 // We use .onl because .to is blocked on school networks.
 let searchUrl: string = "";
