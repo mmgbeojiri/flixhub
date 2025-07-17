@@ -13,7 +13,7 @@ interface Entry {
   image: string;
 }
 
-const mode = "pn";
+const mode = "123movies";
 
 let urlPrefix:string;
 let urlMoviePrefix: string;
@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
   // Perform backend logic (e.g., save data to a database)
   console.log('Received data:', searchUrl);
 
-  await axios.get(searchUrl).then((response) => {
+  await axios.get(searchUrl).then(async (response) => {
     let $ = cheerio.load(response.data);
     
     if (mode == "onl") {
@@ -93,11 +93,14 @@ export async function POST(request: NextRequest) {
     }
 
     if (mode == "123movies") {
-      $("#resdata").each((index, element) => {
+      
+      $("#resdata .col").each((index, element) => {
+        console.log($(element).children("div"));
+
         let newEntry: Entry = {
-          text: $(element).find(".title").text() || "",
-          link: $(element).find("a").attr("href") || "",
-          image: $(element).find("img").attr("src") || ""
+          text: $(element).find(".card").find(".card-body").find("h2").text() || "",
+          link: $(element).find(".card").find("a").attr("href") || "",
+          image: $(element).find(".card").find("img").attr("src") || ""
         }
         entries.push(newEntry);
         console.log(newEntry);
