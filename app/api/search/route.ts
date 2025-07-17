@@ -21,10 +21,14 @@ let urlShowsPrefix: string;
 
 if (mode == "onl") { 
   urlPrefix = "https://lookmovie.onl/?s="
-} else if (mode == "pn") {
+};
+if (mode == "pn") {
   urlMoviePrefix = "https://ww1.lookmovie.pn/movies/search/?q="
   urlShowsPrefix = "https://ww1.lookmovie.pn/shows/search/?q="
-}
+};
+if (mode == "123movies") {
+  urlPrefix = "https://ww20.0123movie.net/search.html?q="
+};
 // We use .onl because .to is blocked on school networks.
 let searchUrl: string = "";
 let entries: Entry[] = [];
@@ -47,6 +51,9 @@ export async function POST(request: NextRequest) {
   }
   if (mode == "pn") {
     searchUrl = urlMoviePrefix + url;
+  }
+  if (mode == "123movies") {
+    searchUrl = urlPrefix + url;
   }
   // Perform backend logic (e.g., save data to a database)
   console.log('Received data:', searchUrl);
@@ -80,6 +87,18 @@ export async function POST(request: NextRequest) {
 
         
 
+        entries.push(newEntry);
+        console.log(newEntry);
+      });
+    }
+
+    if (mode == "123movies") {
+      $("#resdata").each((index, element) => {
+        let newEntry: Entry = {
+          text: $(element).find(".title").text() || "",
+          link: $(element).find("a").attr("href") || "",
+          image: $(element).find("img").attr("src") || ""
+        }
         entries.push(newEntry);
         console.log(newEntry);
       });
