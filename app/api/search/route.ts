@@ -27,11 +27,11 @@ if (mode == "pn") {
   urlShowsPrefix = "https://ww1.lookmovie.pn/shows/search/?q="
 };
 if (mode == "123movies") {
-  urlPrefix = "https://ww20.0123movie.net/search.html?q="
+  urlPrefix = "https://ww20.0123movie.net/search.html?q=";
 };
 if (mode == "fmovies") {
-  urlPrefix = "https://www.fmovies.gd/search?q=""
-}
+  urlPrefix = "https://www.fmovies.gd/search?q=";
+};
 // We use .onl because .to is blocked on school networks.
 let searchUrl: string = "";
 let entries: Entry[] = [];
@@ -48,7 +48,8 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   // Handle POST requests to /api/users
   entries = [];
-  const { url }: requestBody = await request.json(); // Parse request body as JSON
+  let { url }: requestBody = await request.json(); // Parse request body as JSON
+  url = encodeURIComponent(url);
   if (mode == "onl") {
   searchUrl = urlPrefix + url;
   }
@@ -65,7 +66,7 @@ export async function POST(request: NextRequest) {
   console.log('Received data:', searchUrl);
 
   await axios.get(searchUrl).then(async (response) => {
-    if (mode == "123movies") {
+    if (mode == "123movies" || mode == "fmovies") {
       //wait one second
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
@@ -123,9 +124,11 @@ export async function POST(request: NextRequest) {
     };
 
     if (mode == "fmovies") {
-      $("a .block").each((index, element) => {
+      console.log($('body').html());
+      $(".block a").each((index, element) => {
+        console.log("yey");
         let newEntry: Entry = {
-          text: $(element).find(".card").find(".card-body").find("h2").text() || "",
+          text: $(element).find("div").find("div").find("h3").text() || "",
           link: $(element).attr("href") || "",
           image: $(element).find("div").find("img").attr("src") || ""
         }
