@@ -3,7 +3,7 @@ import { url } from 'inspector';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import * as cheerio from 'cheerio';
-import puppeteer from puppeteer;
+import puppeteer from "puppeteer";
 import axios from 'axios';
 interface requestBody {
   url: string;
@@ -120,6 +120,7 @@ export async function POST(request: NextRequest) {
   entries = [];
   let { url }: requestBody = await request.json(); // Parse request body as JSON
   url = encodeURIComponent(url);
+  let csr = false
   if (mode == "onl") {
   searchUrl = urlPrefix + url;
   }
@@ -128,22 +129,19 @@ export async function POST(request: NextRequest) {
   }
   if (mode == "123movies") {
     searchUrl = urlPrefix + url;
+    csr = true;
   }
   if (mode == "fmovies") {
     searchUrl = urlPrefix + url;
+    csr = true;
   }
-  let csr = false
   // Perform backend logic (e.g., save data to a database)
   console.log('Received data:', searchUrl);
-  if (csr) {
+  if (!csr) {
   await axios.get(searchUrl).then(async (response) => {
-    if (mode == "123movies" || mode == "fmovies") {
-      //wait one second
-      await new Promise(resolve => setTimeout(resolve, 1000));
-    }
+
     parseData(mode, response.data);
     
-
 
   }).catch((error) => {
     console.error('Error fetching data:', error);
@@ -153,13 +151,23 @@ export async function POST(request: NextRequest) {
   });
   } else {
      console.log("Content might be dynamic, using Puppeteer...");
-     const browser = await puppeteer.launch();
+     const browser = await puppeteer.launch({
+  headless: true,
+  args: ['--no-sandbox', '--disable-setuid-sandbox']
+});
+
         const page = await browser.newPage();
         await page.goto(searchUrl, { waitUntil: 'networkidle2' }); // Wait for network to be idle
         let htmlContent = await page.content();
         await browser.close();
 
-        parseData(mode, htmlContent);
+
+        try {
+          await parseData(mode, htmlContent);
+        } catch (error) {
+          console.error('Error parsing data:', error);
+          return NextResponse.json({ error: 'Failed to fetch data' }, { status: 500 });
+        }
   }
 
 
