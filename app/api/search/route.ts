@@ -3,6 +3,7 @@ import { url } from 'inspector';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import * as cheerio from 'cheerio';
+import puppeteer from puppeteer;
 import axios from 'axios';
 interface requestBody {
   url: string;
@@ -45,32 +46,8 @@ export async function GET(request: NextRequest) {
   return NextResponse.json(entries);
 }
 
-export async function POST(request: NextRequest) {
-  // Handle POST requests to /api/users
-  entries = [];
-  let { url }: requestBody = await request.json(); // Parse request body as JSON
-  url = encodeURIComponent(url);
-  if (mode == "onl") {
-  searchUrl = urlPrefix + url;
-  }
-  if (mode == "pn") {
-    searchUrl = urlMoviePrefix + url;
-  }
-  if (mode == "123movies") {
-    searchUrl = urlPrefix + url;
-  }
-  if (mode == "fmovies") {
-    searchUrl = urlPrefix + url;
-  }
-  // Perform backend logic (e.g., save data to a database)
-  console.log('Received data:', searchUrl);
-
-  await axios.get(searchUrl).then(async (response) => {
-    if (mode == "123movies" || mode == "fmovies") {
-      //wait one second
-      await new Promise(resolve => setTimeout(resolve, 1000));
-    }
-    let $ = cheerio.load(response.data);
+async function parseData(mode: string, html: any) {
+  let $ = cheerio.load(html);
     
     if (mode == "onl") {
     $("#main article").each((index, element) => {
@@ -136,6 +113,36 @@ export async function POST(request: NextRequest) {
         console.log(newEntry);
       })
     }
+}
+
+export async function POST(request: NextRequest) {
+  // Handle POST requests to /api/users
+  entries = [];
+  let { url }: requestBody = await request.json(); // Parse request body as JSON
+  url = encodeURIComponent(url);
+  if (mode == "onl") {
+  searchUrl = urlPrefix + url;
+  }
+  if (mode == "pn") {
+    searchUrl = urlMoviePrefix + url;
+  }
+  if (mode == "123movies") {
+    searchUrl = urlPrefix + url;
+  }
+  if (mode == "fmovies") {
+    searchUrl = urlPrefix + url;
+  }
+  let csr = false
+  // Perform backend logic (e.g., save data to a database)
+  console.log('Received data:', searchUrl);
+  if (csr) {
+  await axios.get(searchUrl).then(async (response) => {
+    if (mode == "123movies" || mode == "fmovies") {
+      //wait one second
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+    parseData(mode, response.data);
+    
 
 
   }).catch((error) => {
@@ -144,6 +151,16 @@ export async function POST(request: NextRequest) {
   }).finally(() => {
       console.log("Finished fetching data");
   });
+  } else {
+     console.log("Content might be dynamic, using Puppeteer...");
+     const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+        await page.goto(searchUrl, { waitUntil: 'networkidle2' }); // Wait for network to be idle
+        let htmlContent = await page.content();
+        await browser.close();
+
+        parseData(mode, htmlContent);
+  }
 
 
 
