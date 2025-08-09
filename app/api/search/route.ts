@@ -13,7 +13,7 @@ interface Entry {
   image: string;
 }
 
-const mode = "123movies";
+const mode = "fmovies";
 
 let urlPrefix:string;
 let urlMoviePrefix: string;
@@ -29,6 +29,9 @@ if (mode == "pn") {
 if (mode == "123movies") {
   urlPrefix = "https://ww20.0123movie.net/search.html?q="
 };
+if (mode == "fmovies") {
+  urlPrefix = "https://www.fmovies.gd/search?q=""
+}
 // We use .onl because .to is blocked on school networks.
 let searchUrl: string = "";
 let entries: Entry[] = [];
@@ -53,6 +56,9 @@ export async function POST(request: NextRequest) {
     searchUrl = urlMoviePrefix + url;
   }
   if (mode == "123movies") {
+    searchUrl = urlPrefix + url;
+  }
+  if (mode == "fmovies") {
     searchUrl = urlPrefix + url;
   }
   // Perform backend logic (e.g., save data to a database)
@@ -94,7 +100,7 @@ export async function POST(request: NextRequest) {
         entries.push(newEntry);
         console.log(newEntry);
       });
-    }
+    };
 
     if (mode == "123movies") {
       console.log($('main .card').html());
@@ -114,6 +120,18 @@ export async function POST(request: NextRequest) {
         entries.push(newEntry);
         console.log(newEntry);
       });
+    };
+
+    if (mode == "fmovies") {
+      $("a .block").each((index, element) => {
+        let newEntry: Entry = {
+          text: $(element).find(".card").find(".card-body").find("h2").text() || "",
+          link: $(element).attr("href") || "",
+          image: $(element).find("div").find("img").attr("src") || ""
+        }
+        entries.push(newEntry);
+        console.log(newEntry);
+      })
     }
 
 
